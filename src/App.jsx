@@ -1,15 +1,27 @@
 import { useState } from 'react'
 import Header from './components/Header'
 import Form from './components/Form'
-import './App.css'
+import PatientsList from './components/PatientsList'
 
 function App() {
 
+  const [patients, setPatients] = useState([])
+
   return (
-    <>
+    <div className='container mx-auto mt-10'>
       <Header />
-      <Form />
-    </>
+      <div className='mt-12 md:flex'>
+        <Form
+          patients={patients}
+          setPatients={setPatients}
+        />
+        <PatientsList
+          patients={patients}
+          setPatients={setPatients}
+        />
+      </div>
+
+    </div>
   )
 }
 
