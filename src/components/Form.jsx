@@ -175,7 +175,7 @@ const Form = ({ patients, setPatients, onePatient }) => {
         <div className='mb-3'>
           <label
             className="block text-gray-900 font-bold"
-            htmlFor="date" >Add Description</label>
+            htmlFor="date" >Activities</label>
           <textarea
             value={description}
             onChange={e => setDescription(e.target.value)}
