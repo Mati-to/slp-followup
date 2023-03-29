@@ -4,7 +4,12 @@ module.exports = {
     'index.html',
     './src/**/*.jsx'],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        lato: ['Lato'],
+        karla: ['Karla']
+      }
+    },
   },
   plugins: [],
 }

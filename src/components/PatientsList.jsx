@@ -27,7 +27,7 @@ const PatientsList = ({ patients, setOnePatient, deletePatient }) => {
         </>
       ) : (
         <h4 className="mb-6 text-center font-medium leading-none tracking-tight text-gray-900 text-2xl">
-          No Patient's <span className="text-purple-600 italic font-bold">yet</span>, add one
+          No Patients <span className="text-purple-600 italic font-bold">yet</span>, add one
         </h4>
       )}
 
